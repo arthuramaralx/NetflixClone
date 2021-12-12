@@ -25,6 +25,7 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 	body{
 
 		margin-left: 1vw;
+		font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
 	}
 	
 	.logo {
@@ -53,6 +54,7 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 	}
 	h3 {
 		text-align: center;
+		margin-left: 30px;
 	}
 	.marginfix {
 		display: block;
@@ -117,6 +119,7 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 		}
 	
 		h2 {
-			font-size: 4rem;
+			font-size: 3rem;
 		}
+		
 	}

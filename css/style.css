@@ -15,111 +15,117 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 */
 
 /* VARIÁVEIS */
-:root{
-  background-color:  #00002e;
+:root {
+	background-color: #00002e;
 
 }
 
 /*BODY*/
-	
-	body{
 
-		margin-left: 1vw;
-		font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+body {
+
+	margin-left: 1vw;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.logo {
+	display: block;
+
+	width : 300px;
+	height: 90px;
+	margin: 0 auto;
+
+
+}
+
+header {
+	display: block;
+	width  : 100%;
+}
+
+figcaption {
+	display: none;
+}
+
+h2 {
+	width     : 100%;
+	color     : white;
+	font-size : 2rem;
+	overflow  : hidden;
+	text-align: center;
+}
+
+h3 {
+	text-align : center;
+	margin-left: 30px;
+}
+
+.marginfix {
+	display: block;
+	width  : 500px;
+	margin : 0 auto;
+}
+
+.flex-container {
+	display  : flex;
+	flex-wrap: wrap;
+	width    : 100%;
+	color    : white;
+	margin   : 0 auto;
+	overflow : hidden;
+
+}
+
+img {
+	width : 140px;
+	height: 130px;
+}
+
+li {
+	list-style    : none;
+	display       : flex;
+	flex-direction: column;
+	width         : 186px;
+	margin-right  : 1.5rem;
+
+}
+
+button {
+	display         : block;
+	background-color: #00002e;
+	color           : white;
+	border          : 1px solid white;
+	padding         : 1rem 1.8rem;
+	margin          : 0 auto;
+	margin-top      : 20px;
+}
+
+/*TOPO*/
+header.topo {}
+
+/*RODAPÉ*/
+
+
+/*PÁGINA INICIAL*/
+div.pg-home {}
+
+@media screen and (min-width: 1200px) {
+	body {}
+
+	.flex-container {
+		display    : flex;
+		width      : 858px;
+		margin-left: -13rem;
+
 	}
-	
+
 	.logo {
-		display: block;
-		
-		width: 300px;
-		height: 90px;
-		margin: 0 auto;
-
-
-	}
-	header {
-		display: block;
-		width: 100%;
-	}
-	figcaption {
-		display: none;
+		margin-left: -4rem;
+		margin-top: -1.3rem;
 	}
 
 	h2 {
-		width: 100%;
-		color: white;
-		font-size: 2rem;
-		overflow: hidden;
-		text-align: center;
-	}
-	h3 {
-		text-align: center;
-		margin-left: 30px;
-	}
-	.marginfix {
-		display: block;
-		width: 500px;
-		margin: 0 auto;
-	}
-	.flex-container {
-		display: flex;
-		flex-wrap: wrap;
-		width: 100%;
-		color: white;
-		margin: 0 auto;
-		overflow: hidden;
-		
+		font-size: 3rem;
 	}
 
-	img {
-		width: 140px;
-		height: 130px;
-	}
-	li {
-		list-style: none;
-		display: flex;
-		flex-direction: column;
-		width: 186px;
-		margin-right: 1.5rem;
-		
-	}
-	button {
-		display: block;
-		background-color: #00002e;
-		color: white;
-		border: 1px solid white;
-		padding: 1rem 1.8rem;
-		margin: 0 auto;
-		margin-top: 20px;
-	}
-/*TOPO*/
-	header.topo{
-		
-	}
-
-/*RODAPÉ*/
-	
-
-/*PÁGINA INICIAL*/
-	div.pg-home{
-		
-	}
-	@media screen and (min-width: 1200px) {
-		body {
-
-		}
-		.flex-container {
-			display: flex;
-			width:858px;
-			margin-left: -13rem;
-
-		}
-		.logo {
-			margin-left: -3rem;
-		}
-	
-		h2 {
-			font-size: 3rem;
-		}
-		
-	}
+}

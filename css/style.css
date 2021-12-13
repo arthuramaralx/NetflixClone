@@ -24,16 +24,17 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 body {
 
-	margin-left: 1vw;
+
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .logo {
 	display: block;
 
-	width : 300px;
-	height: 90px;
-	margin: 0 auto;
+	width    : 90%;
+	height   : 70%;
+	max-width: 200px;
+	margin   : 0 auto;
 
 
 }
@@ -48,45 +49,47 @@ figcaption {
 }
 
 h2 {
-	width     : 100%;
+
 	color     : white;
-	font-size : 2rem;
-	overflow  : hidden;
+	font-size : 2.2rem;
 	text-align: center;
 }
 
 h3 {
-	text-align : center;
-	margin-left: 30px;
-}
-
-.marginfix {
-	display: block;
-	width  : 500px;
-	margin : 0 auto;
-}
-
-.flex-container {
-	display  : flex;
-	flex-wrap: wrap;
-	width    : 100%;
-	color    : white;
-	margin   : 0 auto;
-	overflow : hidden;
+	text-align: center;
 
 }
-
 img {
 	width : 140px;
 	height: 130px;
 }
 
+.flex-container {
+	width: 100%;
+	display        : flex;
+	flex-wrap      : wrap;
+	flex-direction : column;
+	color          : white;
+}
+
+figure,
+li,
+ul,
+body,
+section,
+.pg-home, html, header {
+	text-align     : center;
+	display        : flex;
+	flex-direction : column;
+	justify-content: center;
+	align-items    : center;
+}
+
 li {
 	list-style    : none;
-	display       : flex;
-	flex-direction: column;
-	width         : 186px;
-	margin-right  : 1.5rem;
+	width         : 20%;
+	height        : 10%;
+
 
 }
 
@@ -96,7 +99,7 @@ button {
 	color           : white;
 	border          : 1px solid white;
 	padding         : 1rem 1.8rem;
-	margin          : 0 auto;
+	/* margin          : 0 auto; */
 	margin-top      : 20px;
 }
 
@@ -109,23 +112,32 @@ header.topo {}
 /*PÁGINA INICIAL*/
 div.pg-home {}
 
+
+@media screen and (max-width:500px) {
+
+	body {
+		display: ;
+	}
+}
+
 @media screen and (min-width: 1200px) {
-	body {}
+	body {
+		display: ;
+	}
 
 	.flex-container {
 		display    : flex;
 		width      : 858px;
-		margin-left: -13rem;
+		
 
 	}
 
 	.logo {
-		margin-left: -4rem;
-		margin-top: -1.3rem;
+		margin: 0 auto;
 	}
 
 	h2 {
-		font-size: 3rem;
+
 	}
 
 }

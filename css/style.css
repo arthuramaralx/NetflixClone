@@ -24,7 +24,7 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 body {
 
-
+	font-weight: 700;
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -57,7 +57,7 @@ h2 {
 
 h3 {
 	text-align: center;
-
+	margin-top: 1rem;
 }
 img {
 	width : 140px;
@@ -83,12 +83,14 @@ section,
 	flex-direction : column;
 	justify-content: center;
 	align-items    : center;
+	margin-top: 10px;
 }
 
 li {
 	list-style    : none;
 	width         : 20%;
 	height        : 10%;
+	margin-top: 10%;
 
 
 }
@@ -113,31 +115,46 @@ header.topo {}
 div.pg-home {}
 
 
-@media screen and (max-width:500px) {
+@media screen and (min-width:768px) {
 
-	body {
-		display: ;
+	.flex-container{
+		display: flex;
+		flex-direction: row;
+	}
+	li {
+		margin: 5% 9%;
 	}
 }
 
 @media screen and (min-width: 1200px) {
-	body {
-		display: ;
-	}
+	
 
 	.flex-container {
 		display    : flex;
 		width      : 858px;
-		
-
 	}
 
+	li {
+		margin: 3% 2%;
+	}
+	header {
+		width: 100vw;
+	}
+	header figure {
+		width: 100vw;
+	}
 	.logo {
-		margin: 0 auto;
+		width: 100vw;
+		margin-right: 85%;
+		margin-top: -2.5%;
 	}
 
 	h2 {
+		margin-top: 4%;
+		margin-bottom: 2%;
+		font-size: 4rem;
 
+		
 	}
 
 }
